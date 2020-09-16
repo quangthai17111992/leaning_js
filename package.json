@@ -1,0 +1,39 @@
+{
+  "name": "gulp-tool",
+  "version": "1.0.0",
+  "description": "Tool develop front-end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
+    "clean": "gulp clean"
+  },
+  "author": "Quynb <nguyenbaquy93@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp-cssbeautify": "^2.0.1",
+    "gulp-file-include": "^2.2.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-html-extend": "^1.1.6"
+  }
+}

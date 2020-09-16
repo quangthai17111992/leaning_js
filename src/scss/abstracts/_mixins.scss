@@ -1,0 +1,208 @@
+// Scss mixins
+@charset "utf-8";
+
+/*keyframes*/
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+// variables
+$breakpoint_min: 320px;
+$breakpoint_sp: 767px;
+$breakpoint_middle: 1028px;
+$breakpoint_pc: $breakpoint_sp+1;
+// $breakpoint_tablet: 768px;
+$breakpoint_max: 1920px;
+
+$mainColor : #00AAD1;
+$textColor : #000000;
+
+//
+//  Mixin
+//
+
+// Media Query
+@mixin media_pc {
+
+    @media print,
+    screen and (min-width: $breakpoint_pc) {
+        @content;
+    }
+}
+
+@mixin media_sp {
+    @media screen and (max-width: $breakpoint_sp) {
+        @content;
+    }
+}
+
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point) {
+        @content;
+    }
+}
+
+@mixin min-screen($break-point) {
+    @media screen and (min-width: $break-point) {
+        @content;
+    }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+    @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+        @content;
+    }
+}
+
+@mixin transition($porp: all, $time: .2s, $action: ease-in-out) {
+    -webkit-transition: $porp $time $action;
+    transition: $porp $time $action;
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($animation-name) {
+    -webkit-animation: $animation-name;
+    -moz-animation: $animation-name;
+    animation: $animation-name;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+// clearfix
+@mixin cf {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin opacity {
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+/* common mixins */
+@mixin fontsize($size, $base: 10) {
+    font-size: ($size / $base) * 1rem;
+}
+
+@mixin setfont($fontSize, $fontWeight: null, $color : null, $fontFamily: null) {
+    font-size: ($fontSize / 10) * 1rem;
+    color: $color;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+}
+
+@mixin transition($options:.5s all ease) {
+    -webkit-transition: ($options);
+    -moz-transition: ($options);
+    -ms-transition: ($options);
+    -o-transition: ($options);
+    transition: ($options);
+}
+
+@mixin transform($options) {
+    -webkit-transform: ($options);
+    -ms-transform: ($options);
+    -moz-transform: ($options);
+    transform: ($options);
+}
+
+@mixin animation($options) {
+    -webkit-animation: ($options);
+    -ms-animation: ($options);
+    -moz-animation: ($options);
+    animation: ($options);
+}
+
+@mixin dlflex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-wrap($options) {
+    -webkit-flex-wrap: ($options);
+    -ms-flex-wrap: ($options);
+    flex-wrap: ($options);
+}
+
+@mixin fl-column {
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@mixin fl-row {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+@mixin alignitems($options) {
+    -webkit-box-align: $options;
+    -ms-flex-align: $options;
+    align-items: $options;
+}
+
+@mixin flexwidth($options) {
+    -webkit-flex: 0 0 ($options);
+    -ms-flex: 0 0 ($options);
+    flex: 0 0 ($options);
+    max-width: ($options);
+}
+
+@mixin radius($options) {
+    -ms-border-radius: ($options);
+    -moz-border-radius: ($options);
+    -webkit-border-radius: ($options);
+    border-radius: ($options);
+}
+
+@mixin dlflex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
