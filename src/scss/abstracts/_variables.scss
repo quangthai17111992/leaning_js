@@ -1,9 +1,5 @@
 // Scss variables (colours etc...)
 
-$primary-colour: #333333;
-
-$font-size-normal: 13px;
-
 /*get %*/
 @function cent($options) {
     @return ($options * 100%) / 1000;
@@ -39,12 +35,13 @@ $font-size-normal: 13px;
 html {
     margin: 0;
     padding: 0;
-    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: normal;
     color: #000000;
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.6;
     background: #eaf1f4;
+    font-size: 62.5%;
 }
 
 * {
@@ -56,6 +53,8 @@ html {
 body {
     margin: 0px;
     position: relative;
+    font-size: 16px;
+    color: #3c3b37;
 }
 
 h1,
