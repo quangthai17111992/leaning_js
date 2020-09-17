@@ -1,73 +1,239 @@
 footer {
-    background: #5d8fa1;
-    padding: 20px 0px 30px 0px;
+    .footer-banner {
+        .footer-section-banner {
+            padding-top: 1.6rem;
+            padding-bottom: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border-top: 1px solid #dcdacb;
+            padding-left: 3.2rem;
+            padding-right: 3.2rem;
 
-    @media screen and (max-width: 750px) {
-        padding: 25px 0px 20px 0px;
+            .udlite-heading-lg {
+                font-weight: 700;
+                line-height: 1.2;
+                letter-spacing: -.02rem;
+                font-size: 1.9rem;
+            }
+
+            .udlite-text-md {
+                font-weight: 400;
+                line-height: 1.4;
+                font-size: 1.6rem;
+                padding: .8rem 0;
+            }
+
+            .banner-button-container {
+                flex-shrink: 0;
+                padding-left: .8rem;
+
+                a {
+                    font-weight: 700;
+                    line-height: 1.2;
+                    letter-spacing: -.02rem;
+                    font-size: 1.6rem;
+                    position: relative;
+                    align-items: center;
+                    border-radius: 4px;
+                    border: none;
+                    cursor: pointer;
+                    display: inline-flex;
+                    min-width: 10rem;
+                    padding: 0 1.2rem;
+                    justify-content: center;
+                    user-select: none;
+                    vertical-align: bottom;
+                    white-space: nowrap;
+                    height: 4.8rem;
+                    color: #fff;
+                    background-color: #0f7c90;
+                }
+            }
+        }
     }
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: flex-end;
+    .footer-operate {
+        background: #fff;
+        border-top: 1px solid #dcdacb;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
 
-        @media screen and (max-width: 750px) {
-            flex-direction: column-reverse;
+        .ufb-notice--notice-row--3tUOv {
+            .txt {
+                font-weight: 700;
+                line-height: 1.2;
+                letter-spacing: -.02rem;
+                font-size: 1.9rem;
+                padding-top: 2.4rem;
+                padding-bottom: 2.4rem;
+
+                a {
+                    color: #0f7c90;
+                    text-decoration: none;
+                }
+            }
         }
 
-        .footer-left {
+        .image-operate {
+            img {
+                margin: 0 2.4rem 2.4rem 0;
+                vertical-align: middle;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .footer-section-main {
+        background: #fff;
+        border-top: 1px solid #dcdacb;
+        padding-top: 2.4rem;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+
+        .links-and-locale {
             display: flex;
-            justify-content: flex-start;
-            align-content: flex-end;
-            align-items: center;
 
-            @media screen and (max-width: 750px) {
-                flex-direction: column;
+            .locale-select-container {
+                padding: 0;
+                order: 1;
+                flex-shrink: 0;
+                margin-left: auto;
             }
 
-            .logo {
-                padding-right: 30px;
+            .unstyled-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                max-width: none;
+            }
 
-                @media screen and (max-width: 750px) {
-                    padding-right: 0px;
-                    margin-bottom: 20px;
+            .link-column {
+                flex-basis: 25.6rem;
+                margin-right: 1.6rem;
+                margin-bottom: 0;
+
+                li {
+                    padding-left: 0;
+
+                    a {
+                        color: #0f7c90;
+                        text-decoration: none;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        font-size: 1.4rem;
+                        display: block;
+                        padding: .4rem 0;
+                    }
                 }
-            }
-
-            .copyright {
-                margin-top: 7px;
-                color: #ffff;
-                font-size: 11px;
-                font-family: 'Noto Serif JP', serif;
-
-                @media screen and (max-width: 750px) {}
             }
         }
 
-        .privacy {
-            @media screen and (max-width: 750px) {
-                margin-bottom: 18px;
+        .locale-select-container {
+            padding: 0;
+            order: 1;
+            flex-shrink: 0;
+            margin-left: auto;
+
+            .udlite-form-group {
+                max-width: 60rem;
+            }
+        }
+
+        .udlite-form-label {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding-bottom: .8rem;
+            min-height: 2.8rem;
+        }
+
+        .udlite-sr-only {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
+
+        .udlite-heading-sm {
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -.02rem;
+            font-size: 1.4rem;
+        }
+
+        .udlite-select-container {
+            position: relative;
+            min-width: 24rem;
+            max-width: 60rem;
+
+            .udlite-select-icon-container {
+                pointer-events: none;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                height: 100%;
+                padding: 0 .8rem;
+
+
+                &.udlite-select-icon-left {
+                    left: 0;
+                    justify-content: flex-end;
+                    width: 3.6rem;
+                }
+
+                &.udlite-select-icon-right {
+                    right: 0;
+                    width: 3.6rem;
+                }
+            }
+        }
+
+        .udlite-select {
+            background: #fff;
+            border-radius: 4px;
+            border: 1px solid #989586;
+            cursor: pointer;
+            display: block;
+            padding: 0 4rem 0 1.2rem;
+            width: 100%;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            height: 4rem;
+            padding-left: 3.6rem;
+        }
+
+        .logo-and-copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6.4rem 0 4.8rem;
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+                img {
+                    max-width: 110px;
+                }
             }
 
-            a {
-                color: #fff;
-                position: relative;
-                padding-right: 15px;
-
-                @media screen and (max-width: 750px) {}
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    right: 0;
-                    top: 3px;
-                    background: url(../images/icon_menu_02.png) no-repeat;
-
-                    @media screen and (max-width: 750px) {}
-                }
+            .copyright-container {
+                padding: 0;
+                height: 100%;
+                top: 50%;
+                color: #73726c;
+                font-weight: 400;
+                line-height: 1.4;
+                font-size: 1.2rem;
             }
         }
     }
