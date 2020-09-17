@@ -1,9 +1,5 @@
 // Scss variables (colours etc...)
 
-$primary-colour: #333333;
-
-$font-size-normal: 13px;
-
 /*get %*/
 @function cent($options) {
     @return ($options * 100%) / 1000;
