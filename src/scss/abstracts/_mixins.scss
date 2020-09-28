@@ -1,33 +1,6 @@
 // Scss mixins
 @charset "utf-8";
 
-/*keyframes*/
-@mixin keyframes($name) {
-    @-webkit-keyframes #{$name} {
-        @content;
-    }
-
-    @keyframes #{$name} {
-        @content;
-    }
-}
-
-// variables
-$breakpoint_min: 320px;
-$breakpoint_sp: 767px;
-$breakpoint_middle: 1028px;
-$breakpoint_pc: $breakpoint_sp+1;
-$breakpoint_max: 1920px;
-
-$mainColor : #00AAD1;
-$textColorBlack : #000000;
-$primaryColor: #333333;
-$font-size-normal: 14px;
-
-//
-//  Mixin
-//
-
 // Media Query
 @mixin media_pc {
 

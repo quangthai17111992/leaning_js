@@ -6,8 +6,8 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #fff;
-            border-top: 1px solid #dcdacb;
+            background: $colorWhite;
+            border-top: 1px solid $colorBorder;
             padding-left: 3.2rem;
             padding-right: 3.2rem;
 
@@ -47,16 +47,16 @@ footer {
                     vertical-align: bottom;
                     white-space: nowrap;
                     height: 4.8rem;
-                    color: #fff;
-                    background-color: #0f7c90;
+                    color: $colorWhite;
+                    background-color: $colorBlue;
                 }
             }
         }
     }
 
     .footer-operate {
-        background: #fff;
-        border-top: 1px solid #dcdacb;
+        background: $colorWhite;
+        border-top: 1px solid $colorBorder;
         padding-left: 3.2rem;
         padding-right: 3.2rem;
 
@@ -70,7 +70,7 @@ footer {
                 padding-bottom: 2.4rem;
 
                 a {
-                    color: #0f7c90;
+                    color: $colorBlue;
                     text-decoration: none;
                 }
             }
@@ -89,8 +89,8 @@ footer {
     }
 
     .footer-section-main {
-        background: #fff;
-        border-top: 1px solid #dcdacb;
+        background: $colorWhite;
+        border-top: 1px solid $colorBorder;
         padding-top: 2.4rem;
         padding-left: 3.2rem;
         padding-right: 3.2rem;
@@ -121,7 +121,7 @@ footer {
                     padding-left: 0;
 
                     a {
-                        color: #0f7c90;
+                        color: $colorBlue;
                         text-decoration: none;
                         font-weight: 400;
                         line-height: 1.4;
@@ -196,7 +196,7 @@ footer {
         }
 
         .udlite-select {
-            background: #fff;
+            background: $colorWhite;
             border-radius: 4px;
             border: 1px solid #989586;
             cursor: pointer;
