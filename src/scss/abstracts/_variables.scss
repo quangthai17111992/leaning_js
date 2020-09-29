@@ -13,7 +13,7 @@ html {
     padding: 0;
     font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: normal;
-    color: $mainColor;
+    color: $colorMain;
     // font-size: 14px;
     line-height: 1.6;
     background: #eaf1f4;
@@ -30,7 +30,7 @@ body {
     margin: 0px;
     position: relative;
     font-size: $font-size-normal;
-    color: $mainColor;
+    color: $colorMain;
 }
 
 h1,
