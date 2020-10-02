@@ -1,1 +1,11 @@
 // Scss functions
+/*get %*/
+@function cent($options) {
+    @return ($options * 100%) / 1000;
+}
+
+/*get vw*/
+@function vw($target) {
+    $vw: (750 * 0.01) * 1px;
+    @return ($target / $vw) * 1vw;
+}
