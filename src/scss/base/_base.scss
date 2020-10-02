@@ -1,3 +1,16 @@
+// line height
+$h2-line-height: 1.3;
+$line-height-default: 1.4;
+$font-weight-default:400;
+$container-max-witdth: 1200px;
+$container-inner-max-width: 1000px;
+$dt-margin-bottom: 6px;
+$dd-margin-bottom: 26px;
+$pre-border-radius: 2px;
+$pre-margin-bottom:33px;
+$border-radius-sm: 2px;
+$select-padding:6px;
+
 * {
   outline: transparent;
 }
@@ -12,7 +25,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: $primary-font-primary;
-  font-weight: normal;
+  font-weight: $font-weight-default;
   color: $color-text;
   font-size: $font-size-default;
   line-height: $line-height-default;
@@ -62,12 +75,12 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: $container-max-witdth;
   margin: 0 auto;
 }
 
-.ctn-inner {
-  max-width: 1000px;
+.container-inner {
+  max-width: $container-inner-max-width;
   margin: 0 auto;
 }
 
@@ -101,17 +114,17 @@ a {
 -----------------------------------------------------------*/
 dl {
   dt {
-    margin-bottom: 6px;
+    margin-bottom: $dt-margin-bottom;
   }
 
   dd {
-    margin-bottom: 26px;
+    margin-bottom: $dd-margin-bottom;
   }
 }
 
 pre {
-  border-radius: 2px;
-  margin-bottom: 33px;
+  border-radius: $pre-border-radius;
+  margin-bottom: $pre-margin-bottom;
 }
 
 ul {
@@ -179,8 +192,8 @@ select {
   -webkit-transition: all .3s;
   transition: all .3s;
   resize: none;
-  padding: 6px;
-  border-radius: 2px;
+  padding: $select-padding;
+  border-radius: $border-radius-sm;
 }
 
 .sp {
