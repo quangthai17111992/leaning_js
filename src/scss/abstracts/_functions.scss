@@ -9,3 +9,8 @@
     $vw: (750 * 0.01) * 1px;
     @return ($target / $vw) * 1vw;
 }
+
+/*get rem*/
+@function rem($size) {
+    @return $size / $root-font-size * 1rem;
+}

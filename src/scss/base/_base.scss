@@ -33,7 +33,7 @@ html {
   font-family: $font-family-basic;
   font-weight: $font-weight-default;
   color: $color-dark-gray;
-  font-size: $font-size-html;
+  font-size: rem(14px);
   line-height: $line-height-default;
   background: $color-white;
 }
@@ -47,7 +47,6 @@ html {
 body {
   margin: 0;
   position: relative;
-  font-size: $font-size-default;
 }
 
 h1,
