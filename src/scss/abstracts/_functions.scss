@@ -10,7 +10,10 @@
     @return ($target / $vw) * 1vw;
 }
 
-/*get rem*/
+/**
+ * This method convert px to rem based on font-size of :root
+ * @param $size: px
+ */
 @function rem($size) {
     @return $size / $root-font-size * 1rem;
 }

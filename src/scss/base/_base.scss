@@ -33,7 +33,7 @@ html {
   font-family: $font-family-basic;
   font-weight: $font-weight-default;
   color: $color-dark-gray;
-  font-size: rem(14px);
+  font-size: $font-size-default;
   line-height: $line-height-default;
   background: $color-white;
 }
