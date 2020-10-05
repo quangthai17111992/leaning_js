@@ -16,13 +16,13 @@
 @mixin media_pc {
 
     @media print,
-    screen and (min-width: $breakpoint_pc) {
+    screen and (min-width: $breakpoints-lg-md) {
         @content;
     }
 }
 
 @mixin media_sp {
-    @media screen and (max-width: $breakpoint_sp) {
+    @media screen and (max-width: $breakpoints-md-sm) {
         @content;
     }
 }

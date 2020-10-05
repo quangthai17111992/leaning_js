@@ -16,11 +16,11 @@ segoe ui symbol;
 
 
 // Media Query
-$breakpoint-min: 320px;
-$breakpoint-sp: 767px;
-$breakpoint-middle: 1028px;
-$breakpoint-pc: $breakpoint-sp+1;
-$breakpoint-max: 1920px;
+$breakpoints-sm: 320px;
+$breakpoints-md-sm: 767px;
+$breakpoints-md: 1028px;
+$breakpoints-lg-md: $breakpoints-md-sm+1;
+$breakpoints-lg: 1920px;
 
 // spacing 
 $spacing-large: 30px;

@@ -206,7 +206,7 @@ select {
   display: none !important;
 }
 
-@include max-screen($breakpoint_sp) {
+@include max-screen($breakpoints-md-sm) {
   .sp {
     display: block !important;
   }
