@@ -1,0 +1,27 @@
+.p-0 {
+    padding: 0
+}
+
+.pl-8 {
+    padding-left: $spacing--8
+}
+
+.pr-8 {
+    padding-right: $spacing--8
+}
+
+.plr-8 {
+    @extends .pl-8 @extends .pr-8
+}
+
+.pt-8 {
+    padding-top: $spacing--8
+}
+
+.pb-8 {
+    padding-bottom: $spacing--8
+}
+
+.ptb-8 {
+    @extends .pt-8 @extends .pb-8
+}

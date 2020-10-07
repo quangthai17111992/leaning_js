@@ -21,6 +21,7 @@ $padding-bottom--8: 8px;
 
 $margin--0--12: 0 12px;
 $margin-left--8: 8px;
+
 $form-label-clip: rect(1px, 1px, 1px, 1px);
 
 .header-top {
@@ -125,7 +126,7 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
         margin: 0;
         padding: 0;
 
-        .link-bar-category {
+        .nav-bar-item {
             white-space: nowrap;
             padding-left: 0;
 
@@ -134,7 +135,7 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
                 width: $width-full;
                 height: $height-full;
 
-                .link-bar-nav-button {
+                .btn-link {
                     height: $height--48;
                     color: $color-light-black;
                     padding: $padding--8--16;
@@ -156,10 +157,6 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
 
                     &:hover {
                         color: $color-secondary;
-                    }
-
-                    .udlite-text-sm {
-                        font-weight: $font-weight-medium;
                     }
                 }
             }
