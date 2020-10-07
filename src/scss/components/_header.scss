@@ -41,8 +41,6 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
     }
 
     .nav-category {
-        font-weight: $font-weight-medium;
-
         p {
             padding: $padding--0--12;
             margin: $margin--0--12;
@@ -83,26 +81,22 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
     }
 
     .btn-login {
-        .btn {
-            color: $color-secondary;
-            background-color: transparent;
-            border: $border-size-default solid $color-border-blue;
-            min-width: $min-width--100;
-            height: $height--40;
-            font-size: $font-size-default;
-        }
+        color: $color-secondary;
+        background-color: transparent;
+        border: $border-size-default solid $color-border-blue;
+        min-width: $min-width--100;
+        height: $height--40;
+        font-size: $font-size-default;
     }
 
     .btn-sign-up {
         margin-left: $margin-left--8;
 
-        .btn {
-            background-color: $color-secondary;
-            color: $color-white;
-            min-width: $min-width--100;
-            height: $height--40;
-            font-size: $font-size-default;
-        }
+        background-color: $color-secondary;
+        color: $color-white;
+        min-width: $min-width--100;
+        height: $height--40;
+        font-size: $font-size-default;
     }
 }
 
@@ -135,24 +129,10 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
                 height: $height-full;
 
                 .btn-link {
-                    height: $height--48;
                     color: $color-light-black;
                     padding: $padding--8--16;
-                    background-color: transparent;
-                    min-width: auto;
-                    position: relative;
-                    align-items: center;
-                    border-radius: $border-radius--4;
-                    border: none;
-                    cursor: pointer;
-                    display: inline-flex;
-                    justify-content: center;
-                    user-select: none;
-                    vertical-align: bottom;
-                    white-space: nowrap;
-                    font-weight: $font-weight-bold;
-                    line-height: $line-height--1-2;
-                    letter-spacing: $letter-spacing--0-2;
+                    font-size: $font-size-default;
+                    width: 100%;
 
                     &:hover {
                         color: $color-secondary;
