@@ -21,6 +21,7 @@ $padding-bottom--8: 8px;
 
 $margin--0--12: 0 12px;
 $margin-left--8: 8px;
+$form-label-clip: rect(1px, 1px, 1px, 1px);
 
 .header-top {
     align-items: center;
@@ -40,7 +41,7 @@ $margin-left--8: 8px;
     }
 
     .nav-category {
-        font-weight: $font-weight-nomal;
+        font-weight: $font-weight-medium;
 
         p {
             padding: $padding--0--12;
@@ -83,34 +84,11 @@ $margin-left--8: 8px;
                 margin: 0;
                 padding-bottom: $padding-bottom--8;
                 min-height: $min-height--28;
-                position: absolute !important;
+                position: absolute;
                 height: $height--1;
                 width: $width--1;
                 overflow: hidden;
-                clip: rect(1px, 1px, 1px, 1px);
-            }
-
-            .udlite-btn {
-                font-weight: $font-weight-bold;
-                line-height: $line-height--1-2;
-                letter-spacing: $letter-spacing--0-2;
-                font-size: $font-size--16;
-                position: relative;
-                align-items: center;
-                border-radius: $border-radius--4;
-                border: none;
-                cursor: pointer;
-                display: inline-flex;
-                justify-content: center;
-                user-select: none;
-                vertical-align: bottom;
-                white-space: nowrap;
-                height: $height--48;
-                color: $color-secondary;
-                background-color: transparent;
-                padding: $padding--0--12;
-                width: $width--48;
-                min-width: auto;
+                clip: $form-label-clip;
             }
         }
     }
@@ -148,49 +126,35 @@ $margin-left--8: 8px;
         }
     }
 
-    .udlite_btn {
-        position: relative;
-        align-items: center;
-        border-radius: $border-radius--4;
-        border: none;
-        cursor: pointer;
-        display: inline-flex;
-        min-width: $min-width--100;
-        padding: $padding--0--12;
-        justify-content: center;
-        user-select: none;
-        vertical-align: bottom;
-        white-space: nowrap;
-        font-weight: $font-weight-bold;
-        height: $height--40;
-    }
-
     .btn-login {
-        .udlite_btn {
+        .udlite-btn {
             color: $color-secondary;
             background-color: transparent;
             border: $border-size-default solid $color-border-blue;
+            min-width: $min-width--100;
+            height: $height--40;
+            font-size: $font-size-default;
         }
     }
 
     .btn-sign-up {
         margin-left: $margin-left--8;
 
-        .udlite_btn {
+        .udlite-btn {
             background-color: $color-secondary;
             color: $color-white;
+            min-width: $min-width--100;
             height: $height--40;
+            font-size: $font-size-default;
         }
     }
-
-
 }
 
 .link-nav-bar-header {
     position: relative;
     border-top: $border-size-default solid $color-border-default;
     background: #fbfbf8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+    box-shadow: 0 2px 4px rgba(black, .08), 0 4px 12px rgba(black, .08);
     z-index: $z-index--1009;
 
     .unstyled-list {
@@ -239,7 +203,7 @@ $margin-left--8: 8px;
                     }
 
                     .udlite-text-sm {
-                        font-weight: $font-weight-nomal;
+                        font-weight: $font-weight-medium;
                     }
                 }
             }
