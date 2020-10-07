@@ -1,0 +1,43 @@
+.box-search {
+    flex-grow: 1;
+    height: $height--48;
+    border: $border-size-default solid $color-border-dark;
+    border-radius: $border-radius--9999;
+    background-color: $background-color-dark-gray;
+    margin: $margin--0--12;
+
+    .udlite-search-form {
+        display: flex;
+        align-items: center;
+        height: $height-full;
+        flex-direction: row-reverse;
+
+        .udlite-text-input {
+            border-radius: $border-radius--4;
+            border: $border-size-default solid $color-border-dark;
+            display: block;
+            padding: $padding--0--16;
+            min-width: $min-width--240;
+            width: $width-full;
+            background-color: transparent;
+            padding-left: $padding-left--4;
+            border: 0;
+            flex: 1;
+            min-width: 0;
+            height: $height--40;
+        }
+
+        .udlite-form-label {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding-bottom: $padding-bottom--8;
+            min-height: $min-height--28;
+            position: absolute;
+            height: $height--1;
+            width: $width--1;
+            overflow: hidden;
+            clip: $form-label-clip;
+        }
+    }
+}
