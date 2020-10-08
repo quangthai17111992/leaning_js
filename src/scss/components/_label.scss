@@ -12,21 +12,6 @@
         height: $height-full;
         flex-direction: row-reverse;
 
-        .udlite-text-input {
-            border-radius: $border-radius--4;
-            border: $border-size-default solid $color-border-dark;
-            display: block;
-            padding: $padding--0--16;
-            min-width: $min-width--240;
-            width: $width-full;
-            background-color: transparent;
-            padding-left: $padding-left--4;
-            border: 0;
-            flex: 1;
-            min-width: 0;
-            height: $height--40;
-        }
-
         .udlite-form-label {
             display: flex;
             align-items: center;
