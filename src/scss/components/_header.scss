@@ -47,6 +47,22 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
         }
     }
 
+    .box-search {
+        flex-grow: 1;
+        height: $height--48;
+        border: $border-size-default solid $color-border-dark;
+        border-radius: $border-radius--30;
+        background-color: $background-color-dark-gray;
+        margin: $margin--0--12;
+
+        .udlite-search-form {
+            display: flex;
+            align-items: center;
+            height: $height-full;
+            flex-direction: row-reverse;
+        }
+    }
+
     .teach-udemy,
     .business-udemy {
         a {
@@ -127,7 +143,7 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
                 width: $width-full;
                 height: $height-full;
 
-                .btn-link {
+                .nav-bar-link {
                     color: $color-light-black;
                     padding: $padding--8--16;
                     font-size: $font-size-default;
