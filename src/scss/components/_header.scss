@@ -1,0 +1,159 @@
+$z-index--1010: 1010;
+$z-index--1009: 1009;
+
+$letter-spacing--0-2: -0.2px;
+
+$line-height--1-2: 1.2;
+
+$color-border-default: #dcdacb;
+$color-border-dark: #989586;
+$color-border-blue:#2896a9;
+
+$max-width--122: 122px;
+$min-width--240:240px;
+
+$padding--0--12: 0 12px;
+$padding--0--16: 0 16px;
+$padding--8--16: 8px 16px;
+$padding-right--12: 12px;
+$padding-left--4: 4px;
+$padding-bottom--8: 8px;
+
+$margin--0--12: 0 12px;
+$margin-left--8: 8px;
+
+$form-label-clip: rect(1px, 1px, 1px, 1px);
+
+.header-top {
+    align-items: center;
+    display: flex;
+    background: $color-white;
+    height: $height--72;
+    position: relative;
+    z-index: $z-index--1010;
+
+    .logo {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        padding-right: $padding-right--12;
+        max-width: $max-width--122;
+    }
+
+    .nav-category {
+        p {
+            padding: $padding--0--12;
+            margin: $margin--0--12;
+        }
+    }
+
+    .box-search {
+        flex-grow: 1;
+        height: $height--48;
+        border: $border-size-default solid $color-border-dark;
+        border-radius: $border-radius--30;
+        background-color: $background-color-dark-gray;
+        margin: $margin--0--12;
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            height: $height-full;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .teach-udemy,
+    .business-udemy {
+        a {
+            color: $color-dark-gray;
+            padding: $padding--0--12;
+            margin: $margin--0--12;
+            position: relative;
+            align-items: center;
+            border-radius: $border-radius--4;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            min-width: $min-width--100;
+            justify-content: center;
+            user-select: none;
+            vertical-align: bottom;
+            white-space: nowrap;
+        }
+    }
+
+    .business-udemy {
+
+        @include max-screen($width--920) {
+            display: none;
+        }
+    }
+
+    .teach-udemy {
+        @include max-screen($breakpoints-md-sm) {
+            display: none;
+        }
+    }
+
+    .btn-login {
+        color: $color-secondary;
+        background-color: transparent;
+        border: $border-size-default solid $color-border-blue;
+        min-width: $min-width--100;
+        height: $height--40;
+        font-size: $font-size-default;
+    }
+
+    .btn-sign-up {
+        margin-left: $margin-left--8;
+        background-color: $color-secondary;
+        color: $color-white;
+        min-width: $min-width--100;
+        height: $height--40;
+        font-size: $font-size-default;
+    }
+}
+
+.link-nav-bar-header {
+    position: relative;
+    border-top: $border-size-default solid $color-border-default;
+    background: #fbfbf8;
+    box-shadow: 0 2px 4px rgba(black, .08), 0 4px 12px rgba(black, .08);
+    z-index: $z-index--1009;
+
+    .unstyled-list {
+        max-width: $max-width-full;
+        max-height: $height--48;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .nav-bar-item {
+            white-space: nowrap;
+            padding-left: 0;
+
+            .triangle-wrapper {
+                position: relative;
+                width: $width-full;
+                height: $height-full;
+
+                .nav-bar-link {
+                    color: $color-light-black;
+                    padding: $padding--8--16;
+                    font-size: $font-size-default;
+                    width: 100%;
+
+                    &:hover {
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}

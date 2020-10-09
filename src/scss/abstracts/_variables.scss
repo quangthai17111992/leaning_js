@@ -14,6 +14,11 @@ apple color emoji,
 segoe ui emoji,
 segoe ui symbol;
 
+//font weight
+$font-weight-normal: 100;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
 
 // Media Query
 $breakpoints-sm: 320px;
@@ -26,10 +31,45 @@ $breakpoints-lg: 1920px;
 $spacing-large: 30px;
 $spacing-extra: 20px;
 $spacing-default: 16px;
+$spacing--16: 16px;
 $spacing--12: 12px;
 $spacing--10: 10px;
+$spacing--9: 9px;
+$spacing--8: 8px;
+$spacing--7: 7px;
+$spacing--6: 6px;
 $spacing--5: 5px;
+$spacing--4: 4px;
+$spacing--3: 3px;
+$spacing--2: 2px;
+$spacing--2: 1px;
 
 //border
 $border-size-default: 1px;
+
 $border-radius-default: 5px;
+$border-radius--1: 1px;
+$border-radius--2: 2px;
+$border-radius--3: 3px;
+$border-radius--4: 4px;
+$border-radius--30: 30px;
+
+//width
+$width-full: 100%;
+$width--1: 1px;
+$width--40: 40px;
+$width--48: 48px;
+$width--72: 72px;
+$width--920: 920px;
+
+$max-width-full:100%;
+$min-width--100: 100px;
+
+//height
+$height-full: 100%;
+$height--1: 1px;
+$height--40: 40px;
+$height--48: 48px;
+$height--72: 72px;
+
+$min-height--28: 28px;
