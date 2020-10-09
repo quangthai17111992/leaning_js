@@ -18,14 +18,14 @@ footer {
             padding-left: 32px;
             padding-right: 32px;
 
-            .udlite-heading-lg {
+            .heading-lg {
                 font-weight: 700;
                 line-height: 1.2;
                 letter-spacing: -.2px;
                 font-size: 19px;
             }
 
-            .udlite-text-md {
+            .text-md {
                 font-weight: 400;
                 line-height: 1.4;
                 font-size: 16px;
@@ -146,12 +146,12 @@ footer {
             flex-shrink: 0;
             margin-left: auto;
 
-            .udlite-form-group {
+            .form-group {
                 max-width: 600px;
             }
         }
 
-        .udlite-form-label {
+        .form-label {
             display: flex;
             align-items: center;
             margin: 0;
@@ -159,7 +159,7 @@ footer {
             min-height: 28px;
         }
 
-        .udlite-sr-only {
+        .sr-only {
             position: absolute !important;
             height: 1px;
             width: 1px;
@@ -167,19 +167,19 @@ footer {
             clip: rect(1px, 1px, 1px, 1px);
         }
 
-        .udlite-heading-sm {
+        .heading-sm {
             font-weight: 700;
             line-height: 1.2;
             letter-spacing: -.2px;
             font-size: 14px;
         }
 
-        .udlite-select-container {
+        .select-container {
             position: relative;
             min-width: 240px;
             max-width: 600px;
 
-            .udlite-select-icon-container {
+            .select-icon-container {
                 pointer-events: none;
                 display: flex;
                 align-items: center;
@@ -189,20 +189,20 @@ footer {
                 padding: 0 8px;
 
 
-                &.udlite-select-icon-left {
+                &.select-icon-left {
                     left: 0;
                     justify-content: flex-end;
                     width: 36px;
                 }
 
-                &.udlite-select-icon-right {
+                &.select-icon-right {
                     right: 0;
                     width: 36px;
                 }
             }
         }
 
-        .udlite-select {
+        .select {
             background: $color-white;
             border-radius: 4px;
             border: 1px solid #989586;
