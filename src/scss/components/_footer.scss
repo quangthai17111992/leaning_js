@@ -1,35 +1,16 @@
+// section-main-padding
+$footer-section-main-padding-top: $padding-top--24;
+$footer-section-main-padding-bottom: $padding-top--24;
+
+// copyright-padding 
+$logo-and-copyright-padding-top: 64px;
+$logo-and-copyright-padding-bottom: 48px;
+
 $color-border-gray:#dcdacb;
 $color-copyright: #73726c;
 
-$padding-top--16: 16px;
-$padding-top--24: 24px;
-$padding-top--64: 64px;
-
-$padding-bottom--8: 8px;
-$padding-bottom--16: 16px;
-$margin-bottom--24: 24px;
-$padding-bottom--48: 48px;
-
-$padding-left--32: 32px;
-$padding-left--36: 36px;
-
-$padding-right--32: 32px;
-$padding-right--40: 40px;
-
-$padding--8--0: 0px 8px;
-$padding--24--0: 24px 0px;
-$padding--0--32: 32px;
-$padding--16--32: 16px 32px;
-
 $margin-right--16: 16px;
 $margin-right--24: 24px;
-
-$line-height--1-4: 1.4;
-$line-height--1-2: 1.2;
-
-$letter-spacing--0-2: -0.2px;
-
-$form-label-clip: rect(1px, 1px, 1px, 1px);
 
 footer {
     .footer-banner {
@@ -54,16 +35,11 @@ footer {
         .ufb-notice--notice-row--3tUOv {
             .txt {
                 padding: $padding--24--0;
-
-                a {
-                    color: $color-secondary;
-                    text-decoration: none;
-                }
             }
         }
 
         .image-operate {
-            img {
+            .img-operate {
                 margin-right: $margin-right--24;
                 margin-bottom: $margin-bottom--24;
                 vertical-align: middle;
@@ -78,11 +54,10 @@ footer {
     .footer-section-main {
         background: $color-white;
         border-top: $border-size-default solid $color-border-gray;
-        padding-top: $padding-top--24;
         padding: $padding--0--32;
+        padding-top: $footer-section-main-padding-top;
 
         .links-and-locale {
-            display: flex;
 
             .locale-select-container {
                 padding: 0;
@@ -106,9 +81,7 @@ footer {
                 li {
                     padding-left: 0;
 
-                    a {
-                        color: $color-secondary;
-                        text-decoration: none;
+                    .link {
                         font-weight: $font-weight-medium;
                         line-height: $line-height--1-4;
                         display: block;
@@ -191,15 +164,15 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: $padding-bottom--64;
-            padding-bottom: $padding-bottom--48;
+            padding-top: $logo-and-copyright-padding-top;
+            padding-bottom: $logo-and-copyright-padding-bottom;
 
             .logo-container {
                 display: flex;
                 align-items: center;
                 padding: 0;
 
-                img {
+                .img-logo {
                     max-width: $max-width-110;
                 }
             }

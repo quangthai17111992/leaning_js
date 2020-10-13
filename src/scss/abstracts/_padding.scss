@@ -1,135 +1,25 @@
-.p-0 {
-    padding: 0
-}
+// move  hết biến padding qua đây, để reuse lại
+$padding--0--8: 0px 8px;
+$padding--0--12: 0 12px;
+$padding--0--16: 0 16px;
+$padding--8--16: 8px 16px;
+$padding--24--0: 24px 0px;
+$padding--0--32: 0px 32px;
+$padding--16--32: 16px 32px;
 
-.pl-4 {
-    padding-left: $spacing--4
-}
+$padding-right--12: 12px;
+$padding-right--32: 32px;
+$padding-right--40: 40px;
 
-.pr-4 {
-    padding-right: $spacing--4
-}
+$padding-left--4: 4px;
+$padding-left--32: 32px;
+$padding-left--36: 36px;
 
-.px-4 {
-    @extend .pl-4;
-    @extend .pr-4;
-}
+$padding-top--16: 16px;
+$padding-top--24: 24px;
+$padding-top--64: 64px;
 
-.pt-4 {
-    padding-top: $spacing--4
-}
-
-.pb-4 {
-    padding-bottom: $spacing--4
-}
-
-.py-4 {
-    @extend .pt-4;
-    @extend .pb-4;
-}
-
-.p-4 {
-    @extend .pl-4;
-    @extend .pr-4;
-    @extend .pt-4;
-    @extend .pb-4;
-}
-
-.pl-8 {
-    padding-left: $spacing--8
-}
-
-.pr-8 {
-    padding-right: $spacing--8
-}
-
-.px-8 {
-    @extend .pl-8;
-    @extend .pr-8;
-}
-
-.pt-8 {
-    padding-top: $spacing--8
-}
-
-.pb-8 {
-    padding-bottom: $spacing--8
-}
-
-.py-8 {
-    @extend .pt-8;
-    @extend .pb-8;
-}
-
-.p-8 {
-    @extend .pl-8;
-    @extend .pr-8;
-    @extend .pt-8;
-    @extend .pb-8;
-}
-
-.pl-16 {
-    padding-left: $spacing--16
-}
-
-.pr-16 {
-    padding-right: $spacing--16
-}
-
-.px-16 {
-    @extend .pl-16;
-    @extend .pr-16;
-}
-
-.pt-16 {
-    padding-top: $spacing--16
-}
-
-.pb-16 {
-    padding-bottom: $spacing--16
-}
-
-.py-16 {
-    @extend .pt-16;
-    @extend .pb-16;
-}
-
-.p-16 {
-    @extend .pl-16;
-    @extend .pr-16;
-    @extend .pt-16;
-    @extend .pb-16;
-}
-
-.pl-32 {
-    padding-left: $spacing--32
-}
-
-.pr-32 {
-    padding-right: $spacing--32
-}
-
-.px-32 {
-    @extend .pl-32;
-    @extend .pr-32;
-}
-
-.pt-32 {
-    padding-top: $spacing--32
-}
-
-.pb-32 {
-    padding-bottom: $spacing--32
-}
-
-.py-32 {
-    @extend .pt-32;
-    @extend .pb-32;
-}
-
-.p-32 {
-    @extend .pl-32;
-    @extend .pr-32;
-    @extend .pt-32;
-    @extend .pb-32;
-}
+$padding-bottom--8: 8px;
+$padding-bottom--16: 16px;
+$margin-bottom--24: 24px;
+$padding-bottom--48: 48px;

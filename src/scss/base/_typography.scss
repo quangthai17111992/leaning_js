@@ -22,4 +22,18 @@ $line-height--1-4: 1.4;
     font-size: $font-size--16;
 }
 
+.text-secondary {
+    color: $color-secondary;
+}
+
+.no-underline {
+    text-decoration: none
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+
 // Font imports and variables
