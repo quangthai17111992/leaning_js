@@ -1,17 +1,28 @@
 $color-border-gray:#dcdacb;
+$color-copyright: #73726c;
 
 $padding-top--16: 16px;
-$padding-bottom--16: 16px;
 $padding-top--24: 24px;
-$padding--24--0: 24px 0px;
+$padding-top--64: 64px;
+
+$padding-bottom--8: 8px;
+$padding-bottom--16: 16px;
+$margin-bottom--24: 24px;
+$padding-bottom--48: 48px;
+
 $padding-left--32: 32px;
+$padding-left--36: 36px;
+
 $padding-right--32: 32px;
+$padding-right--40: 40px;
+
+$padding--8--0: 0px 8px;
+$padding--24--0: 24px 0px;
 $padding--0--32: 32px;
 $padding--16--32: 16px 32px;
 
 $margin-right--16: 16px;
 $margin-right--24: 24px;
-$margin-bottom--24: 24px;
 
 $line-height--1-4: 1.4;
 $line-height--1-2: 1.2;
@@ -32,12 +43,6 @@ footer {
 
             .banner-button-container {
                 flex-shrink: 0;
-
-                .btn-large {
-                    color: $color-white;
-                    background-color: $color-secondary;
-                    width: auto;
-                }
             }
         }
     }
@@ -48,10 +53,6 @@ footer {
 
         .ufb-notice--notice-row--3tUOv {
             .txt {
-                font-weight: $font-weight-bold;
-                line-height: $line-height--1-2;
-                letter-spacing: $letter-spacing--0-2;
-                font-size: $font-size--19;
                 padding: $padding--24--0;
 
                 a {
@@ -131,12 +132,12 @@ footer {
             display: flex;
             align-items: center;
             margin: 0;
-            padding-bottom: 8px;
+            padding-bottom: $padding-bottom--8;
             min-height: $min-height--28;
         }
 
         .sr-only {
-            position: absolute !important;
+            position: absolute;
             height: $height--1;
             width: $width--1;
             overflow: hidden;
@@ -155,7 +156,7 @@ footer {
                 position: absolute;
                 top: 0;
                 height: $height-full;
-                padding: 0 8px;
+                padding: $padding--0--8;
 
 
                 &.select-icon-left {
@@ -177,20 +178,21 @@ footer {
             border: $border-size-default solid $color-border-dark;
             cursor: pointer;
             display: block;
-            padding: 0 40px 0 12px;
             width: $width-full;
             appearance: none;
             -moz-appearance: none;
             -webkit-appearance: none;
             height: $height--40;
-            padding-left: 36px;
+            padding-left: $padding-left--36;
+            padding-right: $padding-right--40;
         }
 
         .logo-and-copyright {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 64px 0 48px;
+            padding-top: $padding-bottom--64;
+            padding-bottom: $padding-bottom--48;
 
             .logo-container {
                 display: flex;
@@ -206,7 +208,7 @@ footer {
                 padding: 0;
                 height: $height-full;
                 top: 50%;
-                color: #73726c;
+                color: $color-copyright;
                 font-weight: $font-weight-medium;
                 line-height: $line-height--1-4;
                 font-size: $font-size-sm;
