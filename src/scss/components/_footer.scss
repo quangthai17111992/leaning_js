@@ -1,0 +1,157 @@
+// section-main-padding
+$footer-section-main-padding-top: $padding-top--24;
+$footer-section-main-padding-bottom: $padding-top--24;
+
+// copyright-padding 
+$logo-and-copyright-padding-top: 64px;
+$logo-and-copyright-padding-bottom: 48px;
+
+
+$margin-right--16: 16px;
+$margin-right--24: 24px;
+
+footer {
+    .footer-banner {
+        .footer-section-banner {
+            padding: $padding--16--32;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $color-white;
+            border-top: $border-size-default solid $color-light-white;
+
+            .banner-button-container {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .footer-operate {
+        background: $color-white;
+        border-top: $border-size-default solid $color-light-white;
+
+        .ufb-notice--notice-row--3tUOv {
+            .txt {
+                padding: $padding--24--0;
+            }
+        }
+
+        .our-customer {
+            .customer-image {
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .footer-section-main {
+        background: $color-white;
+        border-top: $border-size-default solid $color-light-white;
+        padding: $padding--0--32;
+        padding-top: $footer-section-main-padding-top;
+
+        .links-and-locale {
+
+            .locale-select-container {
+                padding: 0;
+                order: 1;
+                flex-shrink: 0;
+                margin-left: auto;
+            }
+
+            .unstyled-list {
+                list-style: none;
+                padding: 0;
+                max-width: none;
+            }
+
+            .link-column {
+                flex-basis: 256px;
+                margin-bottom: 0;
+
+                li {
+                    padding-left: 0;
+
+                    .link {
+                        font-weight: $font-weight-medium;
+                        line-height: $line-height--1-4;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .locale-select-container {
+            padding: 0;
+            order: 1;
+            flex-shrink: 0;
+            margin-left: auto;
+
+            .form-group {
+                max-width: $max-width-600;
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            height: $height--1;
+            width: $width--1;
+            overflow: hidden;
+            clip: $form-label-clip;
+        }
+
+        .select-container {
+            position: relative;
+            min-width: $min-width--240;
+            max-width: $max-width-600;
+
+            .select-icon {
+                pointer-events: none;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                height: $height-full;
+
+                &.left {
+                    left: 0;
+                    justify-content: flex-end;
+                    width: $width--36;
+                }
+
+                &.right {
+                    right: 0;
+                    width: $width--36;
+                }
+            }
+        }        
+
+        .copyright-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: $logo-and-copyright-padding-top;
+            padding-bottom: $logo-and-copyright-padding-bottom;
+
+            .logo-footer {
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+                .img-logo {
+                    max-width: $max-width-110;
+                }
+            }
+
+            .copyright {
+                padding: 0;
+                height: $height-full;
+                top: 50%;
+                color: $color-silver-coloured;
+                font-weight: $font-weight-medium;
+                line-height: $line-height--1-4;
+            }
+        }
+    }
+}

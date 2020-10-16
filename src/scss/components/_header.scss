@@ -1,28 +1,11 @@
 $z-index--1010: 1010;
 $z-index--1009: 1009;
 
-$letter-spacing--0-2: -0.2px;
-
-$line-height--1-2: 1.2;
-
-$color-border-default: #dcdacb;
-$color-border-dark: #989586;
-$color-border-blue:#2896a9;
-
 $max-width--122: 122px;
 $min-width--240:240px;
 
-$padding--0--12: 0 12px;
-$padding--0--16: 0 16px;
-$padding--8--16: 8px 16px;
-$padding-right--12: 12px;
-$padding-left--4: 4px;
-$padding-bottom--8: 8px;
-
 $margin--0--12: 0 12px;
 $margin-left--8: 8px;
-
-$form-label-clip: rect(1px, 1px, 1px, 1px);
 
 .header-top {
     align-items: center;
@@ -50,7 +33,7 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
     .box-search {
         flex-grow: 1;
         height: $height--48;
-        border: $border-size-default solid $color-border-dark;
+        border: $border-size-default solid $color-silver;
         border-radius: $border-radius--30;
         background-color: $background-color-dark-gray;
         margin: $margin--0--12;
@@ -99,7 +82,7 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
     .btn-login {
         color: $color-secondary;
         background-color: transparent;
-        border: $border-size-default solid $color-border-blue;
+        border: $border-size-default solid $color-bright-blue;
         min-width: $min-width--100;
         height: $height--40;
         font-size: $font-size-default;
@@ -117,7 +100,7 @@ $form-label-clip: rect(1px, 1px, 1px, 1px);
 
 .link-nav-bar-header {
     position: relative;
-    border-top: $border-size-default solid $color-border-default;
+    border-top: $border-size-default solid $color-light-white;
     background: #fbfbf8;
     box-shadow: 0 2px 4px rgba(black, .08), 0 4px 12px rgba(black, .08);
     z-index: $z-index--1009;

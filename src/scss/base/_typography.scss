@@ -1,1 +1,37 @@
+.heading-lg {
+    font-weight: $font-weight-bold;
+    line-height: $line-height--1-2;
+    letter-spacing: $letter-spacing--0-2;
+    font-size: $font-size--19;
+}
+
+.heading-sm {
+    font-weight: $font-weight-bold;
+    line-height: $line-height--1-2;
+    letter-spacing: $letter-spacing--0-2;
+    font-size: $font-size-default;
+}
+
+.text-md {
+    line-height: $line-height--1-4;
+    font-size: $font-size--16;
+}
+
+.text-secondary {
+    color: $color-secondary;
+}
+
+.no-underline {
+    text-decoration: none
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-sm{
+    font-size: $font-size-sm;
+}
+
+
 // Font imports and variables

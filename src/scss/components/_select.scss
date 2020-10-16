@@ -1,0 +1,14 @@
+.select {
+    background: $color-white;
+    border-radius: $border-radius--4;
+    border: $border-size-default solid $color-silver;
+    cursor: pointer;
+    display: block;
+    width: $width-full;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: $height--40;
+    padding-left: $padding-left--36;
+    padding-right: $padding-right--40;
+}
