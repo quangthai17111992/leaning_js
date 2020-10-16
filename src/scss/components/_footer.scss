@@ -122,7 +122,7 @@ footer {
             min-width: $min-width--240;
             max-width: $max-width-600;
 
-            .select-icon-container {
+            .select-icon {
                 pointer-events: none;
                 display: flex;
                 align-items: center;
@@ -132,42 +132,27 @@ footer {
                 padding: $padding--0--8;
 
 
-                &.select-icon-left {
+                &.left {
                     left: 0;
                     justify-content: flex-end;
                     width: $width--36;
                 }
 
-                &.select-icon-right {
+                &.right {
                     right: 0;
                     width: $width--36;
                 }
             }
-        }
+        }        
 
-        .select {
-            background: $color-white;
-            border-radius: $border-radius--4;
-            border: $border-size-default solid $color-border-dark;
-            cursor: pointer;
-            display: block;
-            width: $width-full;
-            appearance: none;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            height: $height--40;
-            padding-left: $padding-left--36;
-            padding-right: $padding-right--40;
-        }
-
-        .logo-and-copyright {
+        .copyright-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-top: $logo-and-copyright-padding-top;
             padding-bottom: $logo-and-copyright-padding-bottom;
 
-            .logo-container {
+            .logo-footer {
                 display: flex;
                 align-items: center;
                 padding: 0;
@@ -177,14 +162,13 @@ footer {
                 }
             }
 
-            .copyright-container {
+            .copyright {
                 padding: 0;
                 height: $height-full;
                 top: 50%;
                 color: $color-copyright;
                 font-weight: $font-weight-medium;
                 line-height: $line-height--1-4;
-                font-size: $font-size-sm;
             }
         }
     }
