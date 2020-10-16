@@ -133,3 +133,14 @@
     @extend .pt-32;
     @extend .pb-32;
 }
+
+//margin
+.mr-16{
+    margin-right: $spacing--16;
+}
+.mr-24{
+    margin-right: $spacing--24;
+}
+.mb-24 { 
+    margin-bottom: $spacing--24;
+}
