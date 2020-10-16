@@ -67,10 +67,12 @@ $width--72: 72px;
 $width--920: 920px;
 
 $max-width-full: 100%;
-$max-width-110:110px;
+$max-width-110: 110px;
+$max-width-375: 375px;
 $max-width-600: 600px;
 
 $min-width--100: 100px;
+$min-width--173: 173px;
 $min-width--240: 240px;
 
 //height
@@ -91,3 +93,7 @@ $letter-spacing--0-2: -0.2px;
 
 //label-clip
 $form-label-clip: rect(1px, 1px, 1px, 1px);
+
+//z-index
+$z-index--1010: 1010;
+$z-index--1009: 1009;

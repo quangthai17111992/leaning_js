@@ -135,8 +135,23 @@
 }
 
 //margin
+.mb-4{
+    margin-bottom: $spacing--4;
+}
+.ml-4{
+    margin-left: $spacing--4;
+}
+.mt-8{
+    margin-top: $spacing--8;
+}
+.mr-8{
+    margin-right: $spacing--8;
+}
 .mr-16{
     margin-right: $spacing--16;
+}
+.mb-16{
+    margin-bottom: $spacing--16;
 }
 .mr-24{
     margin-right: $spacing--24;
