@@ -6,8 +6,6 @@ $footer-section-main-padding-bottom: $padding-top--24;
 $logo-and-copyright-padding-top: 64px;
 $logo-and-copyright-padding-bottom: 48px;
 
-$color-border-gray:#dcdacb;
-$color-copyright: #73726c;
 
 $margin-right--16: 16px;
 $margin-right--24: 24px;
@@ -20,7 +18,7 @@ footer {
             justify-content: space-between;
             align-items: center;
             background: $color-white;
-            border-top: $border-size-default solid $color-border-gray;
+            border-top: $border-size-default solid $color-light-white;
 
             .banner-button-container {
                 flex-shrink: 0;
@@ -30,7 +28,7 @@ footer {
 
     .footer-operate {
         background: $color-white;
-        border-top: $border-size-default solid $color-border-gray;
+        border-top: $border-size-default solid $color-light-white;
 
         .ufb-notice--notice-row--3tUOv {
             .txt {
@@ -49,7 +47,7 @@ footer {
 
     .footer-section-main {
         background: $color-white;
-        border-top: $border-size-default solid $color-border-gray;
+        border-top: $border-size-default solid $color-light-white;
         padding: $padding--0--32;
         padding-top: $footer-section-main-padding-top;
 
@@ -150,7 +148,7 @@ footer {
                 padding: 0;
                 height: $height-full;
                 top: 50%;
-                color: $color-copyright;
+                color: $color-silver-coloured;
                 font-weight: $font-weight-medium;
                 line-height: $line-height--1-4;
             }
