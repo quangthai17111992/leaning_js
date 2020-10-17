@@ -1,3 +1,11 @@
+.heading-xl{
+    font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 24px;
+}
+
 .heading-lg {
     font-weight: $font-weight-bold;
     line-height: $line-height--1-2;
@@ -15,6 +23,16 @@
 .text-md {
     line-height: $line-height--1-4;
     font-size: $font-size--16;
+}
+
+.txt-sm {
+    font-weight: $font-weight-medium;
+    line-height: $line-height--1-4;
+    font-size: $font-size-sm;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 4px;
 }
 
 .text-secondary {
