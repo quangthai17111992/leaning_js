@@ -5,11 +5,14 @@
     margin-left: auto;
     padding-right: 20px;
     padding-left: 20px;
+
     .component-margin{
         padding-top: $padding-top--48;
     }    
+
     .title-h2{
         align-items: baseline;
+
         .link-title{
             color: $color-secondary;
         }
@@ -45,7 +48,7 @@
             grid-auto-columns: calc((100% - (5 - 1) * 16px)/5);
         }
 
-        .item-courses {
+        .course-item {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
@@ -53,7 +56,7 @@
             min-width: $min-width--173;
 
             .thumb {
-                background-color: #1e1e1c;
+                background-color: $color-medium-black;
                 border-radius: $border-radius--4;
                 overflow: hidden;
                 padding-bottom: 56.25%;
